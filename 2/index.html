@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">  
+		<title>Блог</title>
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Блог</h1>
+			<div>
+				<nav>
+				  <ul class="pagination"><li><a href="Controller.php?page=1">1</a></li><li><a href="Controller.php?page=2">2</a></li><li><a href="Controller.php?page=3">3</a></li><li><a href="Controller.php?page=4">4</a></li><li><a href="Controller.php?page=5">5</a></li><li><a href="Controller.php?page=6">6</a></li><li><a href="Controller.php?page=7">7</a></li> </ul>
+				</nav>
+			</div>
+			<div class='note'>
+				<p>
+					<span class='date'>2019-08-13 13:08:19</span>
+					<span class='name'>мсісмім</span>
+				</p>
+				<p>
+					с імч
+				</p>
+			</div><div class='note'>
+				<p>
+					<span class='date'>2019-08-13 13:08:07</span>
+					<span class='name'>dddddd</span>
+				</p>
+				<p>
+					 мімс с с
+				</p>
+			</div><div class='note'>
+				<p>
+					<span class='date'>2019-08-13 12:57:04</span>
+					<span class='name'>vsvdssd</span>
+				</p>
+				<p>
+					sdvcxbfvsd
+				</p>
+			</div>
+			<div id="form">
+				<form action="Controller.php" method="POST">
+					<p><input class="form-control" placeholder="Ваше имя" name="username"></p>
+					<p><textarea class="form-control" placeholder="Ваш отзыв" name="content"></textarea></p>
+					<p><input type="submit" class="btn btn-info btn-block" value="Сохранить"></p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+
