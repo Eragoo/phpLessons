@@ -5,15 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css?pafg=34">
+    <link rel="stylesheet" href="style.css?pafg=3j">
     <title><?= $title ?></title>
 </head>
 <body>
 <header>
-    header
+    <a href="/webpra/3/admin/add.php">Add page</a>
 </header>
 <main>
-    <?php if ($info) echo "<p>$info</p>" ?>
+    <?php include "elems/info.php" ?>
     <?= $content ?>
 </main>
 <footer>

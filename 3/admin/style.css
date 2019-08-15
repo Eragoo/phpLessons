@@ -2,3 +2,15 @@ main table td, main table th{
     border: 1px solid black;
 
 }
+
+input {
+    margin-bottom: 5px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
