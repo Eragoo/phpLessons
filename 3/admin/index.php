@@ -1,14 +1,5 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors");
-
-$host = "localhost";
-$user = "root";
-$password = "root";
-$dbName = "test";
-
-$link = mysqli_connect($host, $user, $password, $dbName);
-mysqli_query($link, "SET NAMES 'utf8'");
+include "../elems/init.php";
 
 function showPageTable($link, $info = '')
 {
@@ -55,17 +46,13 @@ function deletePage($link)
 
 }
 
-if (isset($_GET['added']) && boolval($_GET['added'])){
-    $info = ['text'=>'Page added successfully', 'status'=>'success'];
-}else{
-    $info = deletePage($link);
-}
+
+$info = deletePage($link);
+
 showPageTable($link, $info);
 
 
 
-
-?>
 
 
 

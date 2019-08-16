@@ -1,20 +1,11 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors");
-
-$host = "localhost";
-$user = "root";
-$password = "root";
-$dbName = "test";
-
-$link = mysqli_connect($host, $user, $password, $dbName);
-mysqli_query($link, "SET NAMES 'utf8'");
+include "../elems/init.php";
 
 function getPage($link, $info = "")
 {
     $title = 'admin add new page';
     if (isset($_GET['id'])){
-        $id = $_GET['id'];
+        $id = mysqli_real_escape_string($link, $_GET['id']);
         $query = "SELECT * FROM pages WHERE id='{$id}'";
         $result = mysqli_query($link, $query) or die(mysqli_error($link));
         $page = mysqli_fetch_assoc($result);
